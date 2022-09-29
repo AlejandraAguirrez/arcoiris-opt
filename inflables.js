@@ -62,5 +62,9 @@ botonAlquilar.onclick = () =>{
     carrito.forEach((juegosVarios)=>{
     totalAlquiler = totalAlquiler + juegosVarios.precio
     })
-alert(`El total del alquiler es ${totalAlquiler}`) 
+    swal.fire({
+        title: 'El precio del alquiler total es de',
+        text:`${'$'+totalAlquiler}`,
+        timer:5000,
+})
 }
